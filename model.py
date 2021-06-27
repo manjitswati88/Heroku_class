@@ -23,7 +23,7 @@ X['experience'] = X['experience'].apply(lambda x: convert_to_int(x))
 
 Y=dataset.iloc[:,-1]
 #splitting training and test set
-#since we have  a very small dataset,we will train.....
+#since we have  a very small dataset,we will trains
 
 from sklearn.model_selection  import train_test_split
 x_train,x_test,y_train,y_test=train_test_split(X,Y,test_size=0.1,random_state=5)
